@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #desk {
+        display: none;
+      }
+      #mob {
+        display: none;
+      }
+      @media screen and (min-width: 700px) {
+        #desk {
+          display: flex;
+        }
+        .color {
+          background-color: red;
+          color: aqua;
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 699px) {
+        #mob {
+          display: flex;
+        }
+        .color_mob {
+          background-color: blue;
+          color: chartreuse;
+          
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="desk">
+      <div class="color">iam good with desktop</div>
+    </div>
+    <div id="mob">
+      <div class="color_mob">iam good with mobile</div>
+    </div>
+  </body>
+</html>
