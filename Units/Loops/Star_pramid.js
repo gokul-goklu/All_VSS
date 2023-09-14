@@ -4,7 +4,7 @@ const Star = (n) => {
     let tail = "";
     let mid = "";
     if (i != 0)
-      for (j = 0; j <= i; j++) {
+      for (j = 0; j < i; j++) {
         hed = hed + " ";
         tail = tail + " ";
       }
