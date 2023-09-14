@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 //import App from './App.jsx'
 import "./index.css";
 //import Profileobj2 from "./ReactCodes/FunctionalComp/Profileobj2";
-import FunctionCounter from "./ReactCodes/FunctionalComp/TestForm";
+//import FunctionCounter from "./ReactCodes/FunctionalComp/TestForm";
+import Launch from "./ReactCodes/Exercise/Launch";
 //import Profile from "./ReactCodes/FunctionalComp/ProfileObj";
 //import ArgCounter from "./ReactCodes/ClassComp/CounterWithArg";
 //import ObjectProfile from "./ReactCodes/ClassComp/Withobject";
@@ -15,6 +16,6 @@ import FunctionCounter from "./ReactCodes/FunctionalComp/TestForm";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <FunctionCounter />
+    <Launch />
   </React.StrictMode>
 );
