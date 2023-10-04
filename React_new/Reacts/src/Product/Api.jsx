@@ -14,22 +14,39 @@ const Api = () => {
   useEffect(() => {
     let result = {};
     product.forEach((item) => {
-      let category = item.category;
+      const { category, ...finalresult } = item;
+      //let category = item.category;
       if (!result[category]) {
-        result[category] = [];
+        result[category] = [finalresult];
+      } else {
+        result[category].push(finalresult);
       }
-
-      result[category] = { item, ...result[category] };
+      //result[category] = { item, ...result[category] };
       //result[category] = { ...result, item };
     });
     setfinalResult(result);
+    console.log(result);
   }, [product]);
-
+  console.log(finalResult);
   // if (result.hasOwnProperty(item.category)) {
   //   result[item.category] = [...item];
 
   console.log(finalResult);
-  return <div>hello</div>;
+  return (
+    <div>
+      <h1>Final Result</h1>
+      {Object.keys(finalResult).map((category) => (
+        <div key={category}>
+          <h3>{category}</h3>
+          <ul>
+            {finalResult[category].map((item, index) => {
+              return <li key={index}>{JSON.stringify(item)}</li>;
+            })}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Api;

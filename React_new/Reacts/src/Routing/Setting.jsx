@@ -6,6 +6,8 @@ const Setting = () => {
       <Link to="/about">About</Link>
       <br />
       <Link to="/">HOME</Link>
+      <br />
+      <Link to="/clean">Cleanup</Link>
     </div>
   );
 };
