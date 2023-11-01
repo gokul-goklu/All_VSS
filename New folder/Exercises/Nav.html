@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        background-color: aqua;
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+      }
+      .card {
+        list-style-type: none;
+        padding: 16px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="container">
+      <li class="card">Home</li>
+      <li class="card">About</li>
+      <li class="card">Help</li>
+    </ul>
+  </body>
+</html>
+
+<script>
+  const contain = document.getElementById("container");
+  const cards = document.getElementsByClassName("card");
+
+  contain.addEventListener("click", (e) => {
+    const end = e.target;
+    end.style.color = "red";
+    for (let i = 0; i < cards.length; i++) {
+      if (end != cards[i]) cards[i].style.color = "pink";
+    }
+  });
+</script>

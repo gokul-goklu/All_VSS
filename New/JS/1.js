@@ -1,15 +1,16 @@
-ajax("/api", {
-  success: (data) => {
-    console.log(data);
-  },
-  error: (error) => {
-    console.log(error);
-  },
-});
+let x = 5;
 
-let promise = new Promise((resolve, reject) => {
-  resolve(data);
-  reject(error);
-});
+function example() {
+  console.log(x);
 
-promise.then((data) => console.log(data)).catch((err) => console.log(err));
+  if (true) {
+    let x = 10;
+    const y = 15;
+    console.log(x + y);
+  }
+
+  console.log(x);
+}
+
+example();
+console.log(x);

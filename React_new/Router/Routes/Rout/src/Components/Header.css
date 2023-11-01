@@ -1,0 +1,7 @@
+.outer{
+    background-color: aqua;
+    display: flex;
+    gap: 47px;
+    justify-content: center;
+    align-items: center;
+}

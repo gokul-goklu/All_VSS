@@ -1,0 +1,23 @@
+/* Rating.css */
+
+/* Center the stars within the parent div */
+div {
+    text-align: center;
+  }
+  
+  /* Style for the radio input and its label */
+  label {
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the stars */
+    margin: 0 10px; /* Add some spacing between stars */
+  }
+  
+  /* Style for the star icon */
+  #Twin {
+    font-size: 24px; /* Set the star size (change to your desired size) */
+  }
+  
+  /* Styling the filled star (yellow) */
+  #Star #Twin[color='yellow'] {
+    color: #ffd700; /* Set the star color (yellow) */
+  }
+  

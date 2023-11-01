@@ -1,0 +1,13 @@
+#text-Input{
+    display: none;
+}
+#starwar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+   
+}
+#spliter{
+    display: flex;
+    flex-direction: column;
+}

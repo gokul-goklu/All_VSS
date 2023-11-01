@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #imgstyle {
+        height: 30px;
+        width: 30px;
+      }
+      #mycard {
+        padding: 40px;
+        max-height: 80px;
+        max-width: 80px;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #container {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="search" id="searching" />
+    <div id="container"></div>
+  </body>
+</html>
+<script>
+  let parsed;
+  fetch("https://fakestoreapi.com/products")
+    .then((data) => data.json())
+    .then((result) => {
+      parsed = result;
+      datasetting(result);
+    });
+  const datasetting = (product) => {
+    const container = document.getElementById("container");
+    for (let i = 0; i < product.length; i++) {
+      let card = document.createElement("div");
+      card.id = "mycard";
+      const cardTitle = document.createElement("div");
+      const cardPrice = document.createElement("div");
+      const cardImg = document.createElement("img");
+      cardImg.id = "imgstyle";
+      cardImg.src = product[i].image;
+      cardPrice.innerText = product[i].price;
+      cardTitle.innerText = product[i].title;
+      card.appendChild(cardTitle);
+      card.appendChild(cardImg);
+      card.appendChild(cardPrice);
+      container.appendChild(card);
+    }
+
+    const search=document.getElementById("searching")
+    search.addEventListener("input",()=>{
+      inputSearching(parsed)
+    })
+
+
+    
+    const inputSearching =(parsed)=>{
+    
+      
+    
+  }
+  };
+</script>
