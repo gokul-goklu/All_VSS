@@ -1,0 +1,21 @@
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .container {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 200px;
+    max-height: 400px;
+  }
+  
+  .item-img {
+    width: 100%;
+    height: auto;
+  }
+  
