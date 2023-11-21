@@ -1,5 +1,6 @@
 import "./App.css";
-import DynamicForm from "./Feature/DynamicForm";
+import Background from "./Background";
+//import DynamicForm from "./Feature/DynamicForm";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <Mainbox />
         </div>
       </mycontext.Provider> */}
-      <DynamicForm />
+      <Background />
     </>
   );
 }
