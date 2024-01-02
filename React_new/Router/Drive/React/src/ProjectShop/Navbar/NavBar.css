@@ -1,0 +1,22 @@
+.outer-link {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #9400e7;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.outer-link li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+.outer-link li a:hover{
+    color: coral;
+}
+body{
+    margin: 0;
+    padding: 0;
+}

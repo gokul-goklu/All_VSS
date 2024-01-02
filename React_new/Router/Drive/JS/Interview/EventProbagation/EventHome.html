@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="outer">
+      <form class="forms">
+        <button class="button">Admit</button>
+      </form>
+    </div>
+  </body>
+</html>
+<style>
+  .button {
+    color: blue;
+    padding: 10px;
+    margin: 10px;
+  }
+  .forms {
+    border: 2px solid brown;
+    margin: 75px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
+  .outer {
+    border: 2px solid brown;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
+</style>
+<script>
+  const div = document.querySelector(".outer");
+  div.addEventListener("click", func);
+  const forms = document.querySelector(".forms");
+  forms.addEventListener("click", func);
+  const button = document.querySelector(".button");
+  button.addEventListener("click", func);
+  function func(e) {
+    alert(
+      "Its button: " +
+        e.currentTarget.tagName +
+        " " +
+        "target: " +
+        e.target.tagName +
+        " " +
+        "this: " +
+        this.tagName
+    );
+  }
+</script>

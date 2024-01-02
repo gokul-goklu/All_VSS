@@ -1,0 +1,52 @@
+.outer-shop{
+    width: 25%;
+    margin: 5px;
+    border: 2px solid brown;
+    padding: 8px;
+}
+
+.outer-shop img{
+    height:70px ;
+
+}
+
+.titleprice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.input-box{
+    width: 267px;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 75px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: antiquewhite;
+    border:4px
+}
+.input-box::placeholder{
+    text-align: center;
+}
+.btn-style{
+    color: #2d2a27;
+    padding: 5px;
+    margin-left: 25%;
+    width: 167px;
+    border-radius: 4px;
+    border: 2px;
+    background-color: revert-layer;
+}

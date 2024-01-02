@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  const rad = [2, 3, 4, 5];
+
+  function diameter(num) {
+    return num * num;
+  }
+  function area(num) {
+    return Math.PI * num * num;
+  }
+  const calculate = (rad, logic) => {
+    let res = [],
+      current;
+    for (let i = 0; i < rad.length; i++) {
+      current = logic(rad[i]);
+      res.push(current);
+    }
+    console.log(res);
+  };
+  calculate(rad, area);
+</script>
